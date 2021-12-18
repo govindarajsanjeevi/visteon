@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Author</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{ book.book_id }}</td>
+      <td>{{ book.title }}</td>
+      <td>{{ book.author }}</td>
+    </tr>
+  </tbody>
+</table>
+<button (click)="onFirst()">First</button>
+<button (click)="onPrev()">Previous</button>
+<button (click)="onNxt()">Next</button>
+<button (click)="onLast()">Last</button>
+<input type="text" [(ngModel)]="size" (blur)="changeEvent()"/>
+<input type="text" [(ngModel)]="title" (blur)="changeEvent()"/>

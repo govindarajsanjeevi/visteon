@@ -1,0 +1,17 @@
+table {
+    background: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td {
+    width: 140px;
+    padding: 4px 10px;
+    font-size: 13px;
+}
+thead td {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+}
+tbody td {
+    border-bottom: 1px solid #dadada;
+}
